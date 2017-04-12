@@ -1,6 +1,6 @@
 version: '2'
 services:
   odoo:
-    image: akretion/voodoo:latest
+    image: sgebox8008:latest
     labels:
 main_service: "True"
