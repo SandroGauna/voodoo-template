@@ -1,9 +1,9 @@
 voodoo:
   shared_eggs: True
   shared_odoo: 'odoo8'
-  used_odoo_repo: 'oca'
+  used_odoo_repo: 'odoo'
 odoo:
-  image: akretion/voodoo
+  image: sgebox8008
   environment:
     - POSTGRESQL_DATA=/workspace/.db
     - POSTGRESQL_DB=db
