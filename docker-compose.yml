@@ -1,6 +1,6 @@
 version: '2'
 services:
   odoo:
-    image: sgebox8008:latest
+    image: sgeboxvd:latest
     labels:
 main_service: "True"
