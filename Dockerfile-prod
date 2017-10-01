@@ -4,6 +4,10 @@ FROM sgeboxvd:latest
 USER root
 # clone odoo to have a cache when re-building image
 RUN git clone https://github.com/OCA/OCB.git /workspace/parts/odoo
+RUN git clone https://github.com/OCA/l10n-brazil.git /workspace/parts/l10n-brazil
+RUN git clone https://github.com/odoo-brazil/odoo-brazil-eletronic-documents.git /workspace/parts/odoo-brazil-eletronic-documents
+RUN git clone https://github.com/OCA/account-fiscal-rule.git /workspace/parts/account-fiscal-rule
+
 ADD . /workspace/
 RUN git config --global user.email "deploy@voodoo" && git config --global user.name "Voodoo Deploy"
 RUN ln -s /opt/voodoo/eggs /workspace/eggs
